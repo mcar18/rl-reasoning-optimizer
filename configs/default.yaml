@@ -17,7 +17,7 @@ train_fraction: 0.7
 val_fraction: 0.15
 test_fraction: 0.15
 # Limit training episodes for faster runs (null = use full train set)
-max_episodes: 30
+max_episodes: null
 # Save per-episode LLM output files (slower; set true for debugging)
 save_episode_outputs: false
 

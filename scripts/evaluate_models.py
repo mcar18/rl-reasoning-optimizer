@@ -118,17 +118,50 @@ def main() -> None:
     b_acc, b_lo, b_hi = bootstrap_ci(bandit_results, accuracy_fn, n_bootstrap=n_boot, confidence=conf, seed=cfg.get("seed"))
     print("Bandit: accuracy = {:.4f} [{:.4f}, {:.4f}], avg_tokens = {:.1f}".format(b_acc, b_lo, b_hi, b_metrics["avg_tokens"]))
 
-    print("REINFORCE (untrained)...", flush=True)
-    feature_dim = len(question_to_features("", vectorizer, 0, 0))
-    agent = ReinforceAgent(n_actions=env.n_actions, feature_dim=feature_dim)
-    reinf_results = evaluate_agent(
-        env,
-        get_feat,
-        lambda features: agent.select_action(features, deterministic=True),
-        test_idx,
-    )
-    reinf_metrics = compute_metrics(reinf_results, token_penalty_scale=token_scale)
-    print("REINFORCE (untrained): accuracy = {:.4f}, avg_tokens = {:.1f}".format(reinf_metrics["accuracy"], reinf_metrics["avg_tokens"]))
+    # REINFORCE: load trained policy if checkpoint exists, else use untrained
+    runs_path = root / cfg.get("runs_path", "runs")
+    if isinstance(runs_path, str):
+        runs_path = root / runs_path
+    exp_dir = runs_path / cfg.get("experiment_name", "reinforce")
+    reinf_metrics = None
+    reinf_ci = (0.0, 0.0)
+    if exp_dir.exists():
+        run_dirs = sorted([d for d in exp_dir.iterdir() if d.is_dir() and d.name.isdigit()], key=lambda d: int(d.name), reverse=True)
+        for run_dir in run_dirs:
+            policy_path = run_dir / "policy.pt"
+            meta_path = run_dir / "checkpoint_meta.json"
+            if policy_path.exists() and meta_path.exists():
+                print("REINFORCE (trained)...", flush=True)
+                import torch
+                with open(meta_path, encoding="utf-8") as f:
+                    meta = json.load(f)
+                agent = ReinforceAgent(n_actions=meta["n_actions"], feature_dim=meta["feature_dim"])
+                agent.load_state_dict(torch.load(policy_path, map_location="cpu", weights_only=True))
+                reinf_results = evaluate_agent(
+                    env,
+                    get_feat,
+                    lambda features: agent.select_action(features, deterministic=True),
+                    test_idx,
+                )
+                reinf_metrics = compute_metrics(reinf_results, token_penalty_scale=token_scale)
+                r_acc_reinf, r_lo_reinf, r_hi_reinf = bootstrap_ci(reinf_results, accuracy_fn, n_bootstrap=n_boot, confidence=conf, seed=cfg.get("seed"))
+                reinf_ci = (r_lo_reinf, r_hi_reinf)
+                print("REINFORCE (trained): accuracy = {:.4f} [{:.4f}, {:.4f}], avg_tokens = {:.1f}".format(
+                    reinf_metrics["accuracy"], r_lo_reinf, r_hi_reinf, reinf_metrics["avg_tokens"]), flush=True)
+                break
+    if reinf_metrics is None:
+        print("REINFORCE (untrained, no checkpoint found)...", flush=True)
+        feature_dim = len(question_to_features("", vectorizer, 0, 0))
+        agent = ReinforceAgent(n_actions=env.n_actions, feature_dim=feature_dim)
+        reinf_results = evaluate_agent(
+            env,
+            get_feat,
+            lambda features: agent.select_action(features, deterministic=True),
+            test_idx,
+        )
+        reinf_metrics = compute_metrics(reinf_results, token_penalty_scale=token_scale)
+        reinf_ci = (reinf_metrics["accuracy"], reinf_metrics["accuracy"])
+        print("REINFORCE (untrained): accuracy = {:.4f}, avg_tokens = {:.1f}".format(reinf_metrics["accuracy"], reinf_metrics["avg_tokens"]), flush=True)
 
     # Save results for plot_results.py to use
     results_path = root / "results" / "eval_results.json"
@@ -138,7 +171,7 @@ def main() -> None:
         "random": {"accuracy": r_acc, "ci": (r_lo, r_hi), "avg_tokens": r_metrics["avg_tokens"]},
         "best_fixed": {"accuracy": f_acc, "ci": (f_lo, f_hi), "avg_tokens": f_metrics["avg_tokens"]},
         "bandit": {"accuracy": b_acc, "ci": (b_lo, b_hi), "avg_tokens": b_metrics["avg_tokens"]},
-        "reinforce": {"accuracy": reinf_metrics["accuracy"], "ci": (reinf_metrics["accuracy"], reinf_metrics["accuracy"]), "avg_tokens": reinf_metrics["avg_tokens"]},
+        "reinforce": {"accuracy": reinf_metrics["accuracy"], "ci": tuple(reinf_ci), "avg_tokens": reinf_metrics["avg_tokens"]},
     }
     with open(results_path, "w", encoding="utf-8") as f:
         _json.dump(eval_results, f, indent=2)

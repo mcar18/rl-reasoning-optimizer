@@ -155,6 +155,15 @@ def main() -> None:
     val_metrics = compute_metrics(val_results, token_penalty_scale=token_scale)
     logger.log_metrics(n_episodes, val_accuracy=val_metrics["accuracy"], val_avg_tokens=val_metrics["avg_tokens"])
     logger.close()
+
+    # Save checkpoint for evaluate_models.py to load
+    import torch
+    checkpoint_dir = Path(logger.run_dir)
+    torch.save(agent.get_state_dict(), checkpoint_dir / "policy.pt")
+    with open(checkpoint_dir / "checkpoint_meta.json", "w", encoding="utf-8") as f:
+        json.dump({"feature_dim": feature_dim, "n_actions": env.n_actions}, f, indent=2)
+    print("Checkpoint saved to", checkpoint_dir, flush=True)
+
     print("\nDone. Val accuracy: {:.4f} | Val avg tokens: {:.1f}".format(val_metrics["accuracy"], val_metrics["avg_tokens"]), flush=True)
 
 
