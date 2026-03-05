@@ -204,17 +204,19 @@ Run `python scripts/evaluate_models.py` to compute these with bootstrap CIs on y
 
 ## Example plots
 
-After training and evaluation, generate plots:
+After training and evaluation, generate plots with `python scripts/plot_results.py`. Plots are saved under `results/plots/`. Commit and push the PNG files so they appear on GitHub.
 
-```bash
-python scripts/plot_results.py
-```
+**Training reward curve** (from latest run in `runs/reinforce/`):
 
-Plots are saved under `results/plots/`:
+![Training reward](results/plots/training_reward.png)
 
-- **Training reward curve** – reward over training steps (if `runs/reinforce/` exists).
-- **Accuracy comparison** – bar chart of accuracy vs baselines with error bars.
-- **Token usage comparison** – average tokens per method.
+**Accuracy comparison** (from `results/eval_results.json`):
+
+![Accuracy comparison](results/plots/accuracy_comparison.png)
+
+**Token usage comparison**:
+
+![Token usage](results/plots/token_usage_comparison.png)
 
 ---
 
