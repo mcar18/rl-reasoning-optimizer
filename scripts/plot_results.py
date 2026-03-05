@@ -14,6 +14,7 @@ if str(ROOT) not in sys.path:
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import matplotlib.ticker as mtick
 import numpy as np
 
 OUT_DIR = ROOT / "results" / "plots"
@@ -67,6 +68,7 @@ def plot_accuracy_comparison(labels: list[str], accuracies: list[float], cis: li
     plt.bar(x, accuracies, yerr=np.array([err_lo, err_hi]), capsize=5)
     plt.xticks(x, labels, rotation=15, ha="right")
     plt.ylabel("Accuracy")
+    plt.gca().yaxis.set_major_formatter(mtick.PercentFormatter(1.0))
     plt.title("Accuracy comparison vs baselines")
     plt.tight_layout()
     plt.savefig(out_path, dpi=150)
