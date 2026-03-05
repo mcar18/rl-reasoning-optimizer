@@ -1,0 +1,250 @@
+{"id": "q1", "question": "What is 15 + 27?", "answer": "42"}
+{"id": "q2", "question": "What is 100 - 37?", "answer": "63"}
+{"id": "q3", "question": "What is 8 times 9?", "answer": "72"}
+{"id": "q4", "question": "What is 144 divided by 12?", "answer": "12"}
+{"id": "q5", "question": "What is 7 * 8 + 3?", "answer": "59"}
+{"id": "q6", "question": "What is (10 + 5) * 2?", "answer": "30"}
+{"id": "q7", "question": "What is 23 + 47?", "answer": "70"}
+{"id": "q8", "question": "What is 81 / 9?", "answer": "9"}
+{"id": "q9", "question": "What is 6 * 7?", "answer": "42"}
+{"id": "q10", "question": "What is 50 - 18?", "answer": "32"}
+{"id": "q11", "question": "What is 12 * 12?", "answer": "144"}
+{"id": "q12", "question": "What is 200 / 8?", "answer": "25"}
+{"id": "q13", "question": "What is 34 + 66?", "answer": "100"}
+{"id": "q14", "question": "What is 5 * 5 * 5?", "answer": "125"}
+{"id": "q15", "question": "What is 90 - 45?", "answer": "45"}
+{"id": "q16", "question": "What is 11 * 11?", "answer": "121"}
+{"id": "q17", "question": "What is 256 / 16?", "answer": "16"}
+{"id": "q18", "question": "What is 19 + 23?", "answer": "42"}
+{"id": "q19", "question": "What is 4 * 25?", "answer": "100"}
+{"id": "q20", "question": "What is 72 / 8?", "answer": "9"}
+{"id": "q21", "question": "What is 2^6?", "answer": "64"}
+{"id": "q22", "question": "What is 3^4?", "answer": "81"}
+{"id": "q23", "question": "What is 15 * 4?", "answer": "60"}
+{"id": "q24", "question": "What is 120 / 5?", "answer": "24"}
+{"id": "q25", "question": "What is 88 + 12?", "answer": "100"}
+{"id": "q26", "question": "What is 63 - 28?", "answer": "35"}
+{"id": "q27", "question": "What is 9 * 6?", "answer": "54"}
+{"id": "q28", "question": "What is 49 / 7?", "answer": "7"}
+{"id": "q29", "question": "What is 13 + 17 + 20?", "answer": "50"}
+{"id": "q30", "question": "What is 100 - 33?", "answer": "67"}
+{"id": "q31", "question": "What is 14 * 5?", "answer": "70"}
+{"id": "q32", "question": "What is 96 / 12?", "answer": "8"}
+{"id": "q33", "question": "What is 25 + 35?", "answer": "60"}
+{"id": "q34", "question": "What is 10 * 10?", "answer": "100"}
+{"id": "q35", "question": "What is 180 / 9?", "answer": "20"}
+{"id": "q36", "question": "What is 41 + 59?", "answer": "100"}
+{"id": "q37", "question": "What is 7 * 9?", "answer": "63"}
+{"id": "q38", "question": "What is 64 / 8?", "answer": "8"}
+{"id": "q39", "question": "What is 55 - 19?", "answer": "36"}
+{"id": "q40", "question": "What is 16 * 4?", "answer": "64"}
+{"id": "q41", "question": "What is 132 / 11?", "answer": "12"}
+{"id": "q42", "question": "What is 28 + 72?", "answer": "100"}
+{"id": "q43", "question": "What is 6 * 8?", "answer": "48"}
+{"id": "q44", "question": "What is 56 / 7?", "answer": "8"}
+{"id": "q45", "question": "What is 77 - 38?", "answer": "39"}
+{"id": "q46", "question": "What is 2 + 3 * 4?", "answer": "14"}
+{"id": "q47", "question": "What is (2 + 3) * 4?", "answer": "20"}
+{"id": "q48", "question": "What is 20 * 5?", "answer": "100"}
+{"id": "q49", "question": "What is 150 / 6?", "answer": "25"}
+{"id": "q50", "question": "What is 31 + 69?", "answer": "100"}
+{"id": "q51", "question": "What is 5 * 12?", "answer": "60"}
+{"id": "q52", "question": "What is 84 / 7?", "answer": "12"}
+{"id": "q53", "question": "What is 45 + 55?", "answer": "100"}
+{"id": "q54", "question": "What is 8 * 7?", "answer": "56"}
+{"id": "q55", "question": "What is 108 / 9?", "answer": "12"}
+{"id": "q56", "question": "What is 92 - 47?", "answer": "45"}
+{"id": "q57", "question": "What is 17 * 3?", "answer": "51"}
+{"id": "q58", "question": "What is 169 / 13?", "answer": "13"}
+{"id": "q59", "question": "What is 22 + 78?", "answer": "100"}
+{"id": "q60", "question": "What is 4 * 18?", "answer": "72"}
+{"id": "q61", "question": "What is 196 / 14?", "answer": "14"}
+{"id": "q62", "question": "What is 36 + 64?", "answer": "100"}
+{"id": "q63", "question": "What is 9 * 8?", "answer": "72"}
+{"id": "q64", "question": "What is 45 / 5?", "answer": "9"}
+{"id": "q65", "question": "What is 105 - 48?", "answer": "57"}
+{"id": "q66", "question": "What is 15 * 6?", "answer": "90"}
+{"id": "q67", "question": "What is 224 / 16?", "answer": "14"}
+{"id": "q68", "question": "What is 38 + 62?", "answer": "100"}
+{"id": "q69", "question": "What is 11 * 9?", "answer": "99"}
+{"id": "q70", "question": "What is 135 / 9?", "answer": "15"}
+{"id": "q71", "question": "What is 2^8?", "answer": "256"}
+{"id": "q72", "question": "What is 3^3?", "answer": "27"}
+{"id": "q73", "question": "What is 5^3?", "answer": "125"}
+{"id": "q74", "question": "What is 10^2?", "answer": "100"}
+{"id": "q75", "question": "What is 44 + 56?", "answer": "100"}
+{"id": "q76", "question": "What is 13 * 7?", "answer": "91"}
+{"id": "q77", "question": "What is 168 / 12?", "answer": "14"}
+{"id": "q78", "question": "What is 52 + 48?", "answer": "100"}
+{"id": "q79", "question": "What is 6 * 9?", "answer": "54"}
+{"id": "q80", "question": "What is 54 / 6?", "answer": "9"}
+{"id": "q81", "question": "What is 66 - 29?", "answer": "37"}
+{"id": "q82", "question": "What is 18 * 5?", "answer": "90"}
+{"id": "q83", "question": "What is 240 / 15?", "answer": "16"}
+{"id": "q84", "question": "What is 61 + 39?", "answer": "100"}
+{"id": "q85", "question": "What is 12 * 8?", "answer": "96"}
+{"id": "q86", "question": "What is 192 / 12?", "answer": "16"}
+{"id": "q87", "question": "What is 73 + 27?", "answer": "100"}
+{"id": "q88", "question": "What is 7 * 11?", "answer": "77"}
+{"id": "q89", "question": "What is 99 / 9?", "answer": "11"}
+{"id": "q90", "question": "What is 114 - 57?", "answer": "57"}
+{"id": "q91", "question": "What is 19 * 4?", "answer": "76"}
+{"id": "q92", "question": "What is 272 / 17?", "answer": "16"}
+{"id": "q93", "question": "What is 84 + 16?", "answer": "100"}
+{"id": "q94", "question": "What is 14 * 7?", "answer": "98"}
+{"id": "q95", "question": "What is 210 / 14?", "answer": "15"}
+{"id": "q96", "question": "What is 95 + 5?", "answer": "100"}
+{"id": "q97", "question": "What is 8 * 12?", "answer": "96"}
+{"id": "q98", "question": "What is 128 / 8?", "answer": "16"}
+{"id": "q99", "question": "What is 123 - 45?", "answer": "78"}
+{"id": "q100", "question": "What is 20 * 6?", "answer": "120"}
+{"id": "q101", "question": "What is 225 / 15?", "answer": "15"}
+{"id": "q102", "question": "What is 17 + 83?", "answer": "100"}
+{"id": "q103", "question": "What is 5 * 17?", "answer": "85"}
+{"id": "q104", "question": "What is 153 / 9?", "answer": "17"}
+{"id": "q105", "question": "What is 29 + 71?", "answer": "100"}
+{"id": "q106", "question": "What is 10 * 9?", "answer": "90"}
+{"id": "q107", "question": "What is 288 / 18?", "answer": "16"}
+{"id": "q108", "question": "What is 156 - 78?", "answer": "78"}
+{"id": "q109", "question": "What is 21 * 4?", "answer": "84"}
+{"id": "q110", "question": "What is 306 / 18?", "answer": "17"}
+{"id": "q111", "question": "What is 33 + 67?", "answer": "100"}
+{"id": "q112", "question": "What is 6 * 11?", "answer": "66"}
+{"id": "q113", "question": "What is 323 / 19?", "answer": "17"}
+{"id": "q114", "question": "What is 46 + 54?", "answer": "100"}
+{"id": "q115", "question": "What is 22 * 4?", "answer": "88"}
+{"id": "q116", "question": "What is 342 / 18?", "answer": "19"}
+{"id": "q117", "question": "What is 57 + 43?", "answer": "100"}
+{"id": "q118", "question": "What is 23 * 3?", "answer": "69"}
+{"id": "q119", "question": "What is 361 / 19?", "answer": "19"}
+{"id": "q120", "question": "What is 68 + 32?", "answer": "100"}
+{"id": "q121", "question": "What is 24 * 4?", "answer": "96"}
+{"id": "q122", "question": "What is 400 / 20?", "answer": "20"}
+{"id": "q123", "question": "What is 79 + 21?", "answer": "100"}
+{"id": "q124", "question": "What is 25 * 4?", "answer": "100"}
+{"id": "q125", "question": "What is 441 / 21?", "answer": "21"}
+{"id": "q126", "question": "What is 89 + 11?", "answer": "100"}
+{"id": "q127", "question": "What is 26 * 3?", "answer": "78"}
+{"id": "q128", "question": "What is 484 / 22?", "answer": "22"}
+{"id": "q129", "question": "What is 91 + 9?", "answer": "100"}
+{"id": "q130", "question": "What is 27 * 3?", "answer": "81"}
+{"id": "q131", "question": "What is 529 / 23?", "answer": "23"}
+{"id": "q132", "question": "What is 93 + 7?", "answer": "100"}
+{"id": "q133", "question": "What is 28 * 3?", "answer": "84"}
+{"id": "q134", "question": "What is 576 / 24?", "answer": "24"}
+{"id": "q135", "question": "What is 97 + 3?", "answer": "100"}
+{"id": "q136", "question": "What is 29 * 2?", "answer": "58"}
+{"id": "q137", "question": "What is 625 / 25?", "answer": "25"}
+{"id": "q138", "question": "What is 99 + 1?", "answer": "100"}
+{"id": "q139", "question": "What is 30 * 3?", "answer": "90"}
+{"id": "q140", "question": "What is 676 / 26?", "answer": "26"}
+{"id": "q141", "question": "What is 2^10?", "answer": "1024"}
+{"id": "q142", "question": "What is 4^4?", "answer": "256"}
+{"id": "q143", "question": "What is 6^3?", "answer": "216"}
+{"id": "q144", "question": "What is 7^2?", "answer": "49"}
+{"id": "q145", "question": "What is 8^2?", "answer": "64"}
+{"id": "q146", "question": "What is 11 + 22 + 33?", "answer": "66"}
+{"id": "q147", "question": "What is 100 - 7 * 8?", "answer": "44"}
+{"id": "q148", "question": "What is 50 * 2 + 10?", "answer": "110"}
+{"id": "q149", "question": "What is (20 - 5) * 2?", "answer": "30"}
+{"id": "q150", "question": "What is 36 / 4 + 5?", "answer": "14"}
+{"id": "q151", "question": "What is 3 * 4 * 5?", "answer": "60"}
+{"id": "q152", "question": "What is 1000 / 8?", "answer": "125"}
+{"id": "q153", "question": "What is 17 + 18 + 19?", "answer": "54"}
+{"id": "q154", "question": "What is 64 - 19?", "answer": "45"}
+{"id": "q155", "question": "What is 13 * 8?", "answer": "104"}
+{"id": "q156", "question": "What is 243 / 9?", "answer": "27"}
+{"id": "q157", "question": "What is 40 + 60?", "answer": "100"}
+{"id": "q158", "question": "What is 14 * 8?", "answer": "112"}
+{"id": "q159", "question": "What is 280 / 14?", "answer": "20"}
+{"id": "q160", "question": "What is 75 + 25?", "answer": "100"}
+{"id": "q161", "question": "What is 16 * 6?", "answer": "96"}
+{"id": "q162", "question": "What is 315 / 15?", "answer": "21"}
+{"id": "q163", "question": "What is 2 * 3 * 4 * 5?", "answer": "120"}
+{"id": "q164", "question": "What is 500 / 4?", "answer": "125"}
+{"id": "q165", "question": "What is 111 - 42?", "answer": "69"}
+{"id": "q166", "question": "What is 31 * 3?", "answer": "93"}
+{"id": "q167", "question": "What is 350 / 14?", "answer": "25"}
+{"id": "q168", "question": "What is 125 - 37?", "answer": "88"}
+{"id": "q169", "question": "What is 32 * 3?", "answer": "96"}
+{"id": "q170", "question": "What is 384 / 16?", "answer": "24"}
+{"id": "q171", "question": "What is 9^2?", "answer": "81"}
+{"id": "q172", "question": "What is 12^2?", "answer": "144"}
+{"id": "q173", "question": "What is 15^2?", "answer": "225"}
+{"id": "q174", "question": "What is 20^2?", "answer": "400"}
+{"id": "q175", "question": "What is 25^2?", "answer": "625"}
+{"id": "q176", "question": "What is 33 * 3?", "answer": "99"}
+{"id": "q177", "question": "What is 418 / 19?", "answer": "22"}
+{"id": "q178", "question": "What is 134 + 66?", "answer": "200"}
+{"id": "q179", "question": "What is 34 * 2?", "answer": "68"}
+{"id": "q180", "question": "What is 456 / 19?", "answer": "24"}
+{"id": "q181", "question": "What is 167 + 33?", "answer": "200"}
+{"id": "q182", "question": "What is 35 * 4?", "answer": "140"}
+{"id": "q183", "question": "What is 495 / 15?", "answer": "33"}
+{"id": "q184", "question": "What is 198 - 99?", "answer": "99"}
+{"id": "q185", "question": "What is 36 * 2?", "answer": "72"}
+{"id": "q186", "question": "What is 540 / 18?", "answer": "30"}
+{"id": "q187", "question": "What is 201 - 102?", "answer": "99"}
+{"id": "q188", "question": "What is 37 * 2?", "answer": "74"}
+{"id": "q189", "question": "What is 585 / 13?", "answer": "45"}
+{"id": "q190", "question": "What is 38 * 2?", "answer": "76"}
+{"id": "q191", "question": "What is 630 / 21?", "answer": "30"}
+{"id": "q192", "question": "What is 39 * 2?", "answer": "78"}
+{"id": "q193", "question": "What is 675 / 27?", "answer": "25"}
+{"id": "q194", "question": "What is 40 * 2?", "answer": "80"}
+{"id": "q195", "question": "What is 720 / 24?", "answer": "30"}
+{"id": "q196", "question": "What is 41 + 82?", "answer": "123"}
+{"id": "q197", "question": "What is 42 * 2?", "answer": "84"}
+{"id": "q198", "question": "What is 765 / 17?", "answer": "45"}
+{"id": "q199", "question": "What is 43 * 2?", "answer": "86"}
+{"id": "q200", "question": "What is 800 / 32?", "answer": "25"}
+{"id": "q201", "question": "What is 44 + 88?", "answer": "132"}
+{"id": "q202", "question": "What is 45 * 2?", "answer": "90"}
+{"id": "q203", "question": "What is 850 / 34?", "answer": "25"}
+{"id": "q204", "question": "What is 46 * 2?", "answer": "92"}
+{"id": "q205", "question": "What is 900 / 36?", "answer": "25"}
+{"id": "q206", "question": "What is 47 + 53?", "answer": "100"}
+{"id": "q207", "question": "What is 48 * 2?", "answer": "96"}
+{"id": "q208", "question": "What is 950 / 38?", "answer": "25"}
+{"id": "q209", "question": "What is 49 * 2?", "answer": "98"}
+{"id": "q210", "question": "What is 1000 / 40?", "answer": "25"}
+{"id": "q211", "question": "What is 50 * 2?", "answer": "100"}
+{"id": "q212", "question": "What is 1050 / 42?", "answer": "25"}
+{"id": "q213", "question": "What is 51 + 49?", "answer": "100"}
+{"id": "q214", "question": "What is 52 * 2?", "answer": "104"}
+{"id": "q215", "question": "What is 1100 / 44?", "answer": "25"}
+{"id": "q216", "question": "What is 53 + 47?", "answer": "100"}
+{"id": "q217", "question": "What is 54 * 2?", "answer": "108"}
+{"id": "q218", "question": "What is 1150 / 46?", "answer": "25"}
+{"id": "q219", "question": "What is 55 + 45?", "answer": "100"}
+{"id": "q220", "question": "What is 56 * 2?", "answer": "112"}
+{"id": "q221", "question": "What is 1200 / 48?", "answer": "25"}
+{"id": "q222", "question": "What is 57 + 43?", "answer": "100"}
+{"id": "q223", "question": "What is 58 * 2?", "answer": "116"}
+{"id": "q224", "question": "What is 1250 / 50?", "answer": "25"}
+{"id": "q225", "question": "What is 59 + 41?", "answer": "100"}
+{"id": "q226", "question": "What is 60 * 2?", "answer": "120"}
+{"id": "q227", "question": "What is 1300 / 52?", "answer": "25"}
+{"id": "q228", "question": "What is 61 + 39?", "answer": "100"}
+{"id": "q229", "question": "What is 62 * 2?", "answer": "124"}
+{"id": "q230", "question": "What is 1350 / 54?", "answer": "25"}
+{"id": "q231", "question": "What is 62 + 38?", "answer": "100"}
+{"id": "q232", "question": "What is 63 * 2?", "answer": "126"}
+{"id": "q233", "question": "What is 1400 / 56?", "answer": "25"}
+{"id": "q234", "question": "What is 64 + 36?", "answer": "100"}
+{"id": "q235", "question": "What is 65 * 2?", "answer": "130"}
+{"id": "q236", "question": "What is 1450 / 58?", "answer": "25"}
+{"id": "q237", "question": "What is 66 + 34?", "answer": "100"}
+{"id": "q238", "question": "What is 67 * 2?", "answer": "134"}
+{"id": "q239", "question": "What is 1500 / 60?", "answer": "25"}
+{"id": "q240", "question": "What is 68 + 32?", "answer": "100"}
+{"id": "q241", "question": "What is 69 * 2?", "answer": "138"}
+{"id": "q242", "question": "What is 1550 / 62?", "answer": "25"}
+{"id": "q243", "question": "What is 70 + 30?", "answer": "100"}
+{"id": "q244", "question": "What is 71 * 2?", "answer": "142"}
+{"id": "q245", "question": "What is 1600 / 64?", "answer": "25"}
+{"id": "q246", "question": "What is 72 + 28?", "answer": "100"}
+{"id": "q247", "question": "What is 73 * 2?", "answer": "146"}
+{"id": "q248", "question": "What is 1650 / 66?", "answer": "25"}
+{"id": "q249", "question": "What is 74 + 26?", "answer": "100"}
+{"id": "q250", "question": "What is 75 * 2?", "answer": "150"}

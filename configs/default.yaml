@@ -1,0 +1,39 @@
+# Default configuration for rl-reasoning-optimizer
+
+seed: 42
+data_path: data/math_small.jsonl
+runs_path: runs
+
+# Backend: local (ollama) or api
+backend: local
+model: llama2
+
+# RL / env
+token_penalty_scale: 0.0001
+max_tokens: 1024
+
+# Train
+train_fraction: 0.7
+val_fraction: 0.15
+test_fraction: 0.15
+# Limit training episodes for faster runs (null = use full train set)
+max_episodes: 30
+# Save per-episode LLM output files (slower; set true for debugging)
+save_episode_outputs: false
+
+# REINFORCE
+lr: 0.001
+gamma: 0.99
+entropy_coef: 0.01
+max_grad_norm: 1.0
+tfidf_max_features: 500
+
+# Eval
+bootstrap_n: 200
+confidence: 0.95
+# When finding best fixed strategy, use at most this many train questions (faster)
+best_fixed_max_questions: 50
+
+# Logging
+log_interval: 10
+experiment_name: reinforce

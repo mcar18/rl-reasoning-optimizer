@@ -1,0 +1,6 @@
+# Local Ollama configuration
+
+backend: local
+model: llama2
+base_url: "http://localhost:11434"
+use_stub_if_unavailable: true

@@ -1,0 +1,16 @@
+# rl-reasoning-optimizer
+.venv/
+__pycache__/
+*.pyc
+runs/
+.env
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+results/plots/*.png
+!results/plots/.gitkeep

@@ -1,0 +1,5 @@
+# API-based model (OpenAI compatible)
+
+backend: api
+model: gpt-4o-mini
+# Set OPENAI_API_KEY or API_KEY in environment
