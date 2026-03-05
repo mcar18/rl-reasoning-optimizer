@@ -83,7 +83,8 @@ rl-reasoning-optimizer/
 │   ├── train_reinforce.py
 │   ├── run_bandit_baseline.py
 │   ├── evaluate_models.py
-│   └── plot_results.py
+│   ├── plot_results.py
+│   └── check_ollama.py
 ├── src/rl_reasoning_optimizer/
 │   ├── backends/      # base, local (Ollama), API
 │   ├── env/           # LLMReasoningEnv (MDP)
@@ -143,6 +144,46 @@ The project is designed to run **entirely inside a Python virtual environment**.
 All subsequent commands assume the venv is activated.
 
 **Faster runs:** In `configs/default.yaml`, set `max_episodes: 30` (or any number) to limit training/episode count for quick tests. Leave `max_episodes: null` for full runs. Per-episode output files are off by default (`save_episode_outputs: false`); set to `true` only when debugging.
+
+---
+
+## Using Ollama (local LLM)
+
+To use a **real local model** instead of the stub (so you get real accuracy and learning):
+
+1. **Install Ollama**  
+   - Download and install from [https://ollama.com](https://ollama.com).  
+   - On Windows/macOS/Linux, Ollama usually runs in the background after install.
+
+2. **Pull a model**  
+   In a terminal:
+   ```bash
+   ollama pull llama3.2
+   ```
+   Or a smaller/faster model:
+   ```bash
+   ollama pull phi
+   ```
+   Use the same name in config (see step 4).
+
+3. **Check that Ollama is reachable**  
+   From the project root with your venv activated:
+   ```powershell
+   python scripts/check_ollama.py
+   ```
+   You should see: `Ollama is running and model '...' is available.`
+
+4. **Run with the Ollama config**  
+   The config `local_ollama` uses your local Ollama and **disables the stub** (so the app fails clearly if Ollama is not running). It uses the model name in `configs/local_ollama.yaml` (default `llama3.2`). To use a different model, edit that file and set `model: your-model-name`.
+
+   ```powershell
+   python scripts/train_reinforce.py --config local_ollama
+   python scripts/run_bandit_baseline.py --config local_ollama
+   python scripts/evaluate_models.py --config local_ollama
+   python scripts/plot_results.py
+   ```
+
+   For a full run with Ollama, set `max_episodes: null` in `configs/default.yaml` (or in `local_ollama.yaml` to override), then run the same commands. Training will be slower (real LLM calls) but accuracy and reward curves will be meaningful.
 
 ---
 

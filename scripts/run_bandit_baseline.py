@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -27,8 +28,11 @@ def load_data(path: str) -> list[dict]:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Run epsilon-greedy bandit baseline.")
+    parser.add_argument("--config", default="default", help="Config name (default, local_ollama, api_model)")
+    args = parser.parse_args()
     root = get_project_root()
-    cfg = load_config("default")
+    cfg = load_config(args.config)
     set_seed(cfg.get("seed", 42))
 
     data_path = cfg.get("data_path", root / "data" / "math_small.jsonl")

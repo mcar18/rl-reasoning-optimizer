@@ -1,6 +1,8 @@
-# Local Ollama configuration
+# Local Ollama configuration — use this to run with a real local LLM.
+# Requires Ollama installed and running with the chosen model pulled.
 
 backend: local
-model: llama2
+model: llama3.2
 base_url: "http://localhost:11434"
-use_stub_if_unavailable: true
+# Set to false so the app fails clearly if Ollama is not available (no stub fallback)
+use_stub_if_unavailable: false

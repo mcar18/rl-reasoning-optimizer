@@ -50,11 +50,14 @@ def load_config(
     config_name: str = "default",
     overrides: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
-    """Load config by name (e.g. 'default', 'local_ollama', 'api_model')."""
+    """Load config by name (e.g. 'default', 'local_ollama', 'api_model'). Merges with default.yaml when not default."""
     root = get_project_root()
     configs_dir = root / "configs"
-    path = configs_dir / f"{config_name}.yaml"
-    cfg = load_yaml(path)
+    default_path = configs_dir / "default.yaml"
+    named_path = configs_dir / f"{config_name}.yaml"
+    cfg = load_yaml(default_path)
+    if config_name != "default" and named_path.exists():
+        cfg = merge_config(cfg, load_yaml(named_path))
     if overrides:
         cfg = merge_config(cfg, overrides)
     # Ensure paths are absolute where needed
